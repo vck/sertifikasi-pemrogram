@@ -1,5 +1,10 @@
-from sklearn.linear_model import LogisticRegression
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
 
-class Model(LogisticRegression):
-    def __init__(self):
-        pass
+  def printname(self):
+    print(self.firstname, self.lastname)
+
+class Student(Person):
+  pass

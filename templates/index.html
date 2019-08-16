@@ -3,7 +3,43 @@
 {%block content%}
 
 	<div class="container">
-		
+		{%if data==1%}
+			<h3>Disetujui!</h3>
+
+		{%elif data==0%}
+			<h3>Tidak disetujui!</h3>
+		{%else%}
+			<h3>Masukkan parameter</h3>
+		{%endif%}
+		<form method="post" action="/predict">
+  			<div class="form-group">
+		    	<label for="exampleInputEmail1">Lama Bekerja</label>
+		   		<input type="text" class="form-control" name="a1">
+		  	</div>
+
+		  	<div class="form-group">
+		  		<label for="exampleInputEmail1">Jenis Bisnis</label>
+		  		<input type="text" class="form-control" name="a2">
+		    </div>
+
+		  	<div class="form-group">
+		  		<label for="exampleInputEmail1">Banyak Pengajuan Kredit</label>
+		  		<input type="text" class="form-control" name="a3">
+		    </div>
+
+		  	<div class="form-group">
+		  		<label for="exampleInputEmail1">Tindak Kriminal</label>
+		  		<input type="text" class="form-control" name="a4">
+		    </div>
+
+		  	<div class="form-group">
+		  		<label for="exampleInputEmail1">Jumlah Uang Di Rekening</label>
+		  		<input type="text" class="form-control" name="a5">
+		    </div>
+
+		    <button type="submit" class="btn btn-primary">Submit</button>
+		  </div>
+		</form>
 	</div>
 
 {%endblock%}
