@@ -17,7 +17,7 @@ Cython==0.29.12
 decorator==4.4.0
 descartes==1.1.0
 Flask==1.1.1
-Flask-Cors==3.0.8
+Flask-Cors==3.0.9
 Flask-Login==0.4.1
 Flask-Migrate==2.5.2
 Flask-Script==2.0.6
