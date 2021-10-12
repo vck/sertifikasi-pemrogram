@@ -48,7 +48,7 @@ matplotlib==3.1.1
 mizani==0.5.4
 networkx==2.3
 numpy==1.16.4
-opencv-python==3.4.5.20
+opencv-python==3.4.7.28
 palettable==3.2.0
 pandas==0.25.0
 parso==0.5.1
